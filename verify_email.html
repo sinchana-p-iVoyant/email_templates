@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+        .main-container {
+            width: 30rem;
+            height: 46.3rem;
+            margin: auto;
+            margin-top: 8.38rem;
+            margin-bottom: 9.38rem;
+            font-family: 'Poppins';
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            height: 3.375rem;
+        }
+
+        .header img{
+            width: 2rem;
+            height: 2rem;
+            background: radial-gradient(192.88% 102.69% at 14.17% 91%, #2F54EB 0%, #6762D9 100%);
+            border-radius: 50%;
+            padding: 0.6rem;
+            margin: auto 0.5rem;
+        }
+
+        .header p {
+            margin-left: 0.5rem;
+        }
+
+        .main {
+            min-height: 32.9375rem;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            margin: 4.25rem auto;
+        }
+
+        .main-info {
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-info>img {
+            margin: 1.5rem auto;
+        }
+        .main-info>p {
+            margin: 0 auto;
+        }
+
+        .verify-mail {
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.25rem;
+            margin: 0;
+        }
+
+        .mail {
+            display: flex;
+            flex-direction: row;
+            font-weight: 400;
+        }
+
+        .mail>p{
+            margin: 0.62rem auto;
+        }
+
+        .mail-address {
+            padding-left: 0.5rem;
+            font-weight: 650;
+        }
+
+        .email-info {
+            color: #333;
+            font-weight: 400;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1rem;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        .main>button{
+            background-color: #2F54EB;
+            width: 12.375rem;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex-shrink: 0;
+            color: white;
+            border: none;
+            margin: 2rem auto;
+
+            text-align: center;
+            font-family: 'Poppins';
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+
+        .resend {
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+            padding-bottom: 0rem;
+        }
+
+        .footer {
+            color: #828282;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <img src="images/fluent_cloud-error.svg" alt="">
+            <p>Fallout <span style="color:#2F54EB">Manager</span> </p>
+        </div>
+        <div class="main">
+            <p class="verify-mail">Verify Email</p>
+            
+            <div class="main-info">
+                <div class="mail">
+                    <p>We've sent an email to: </p>
+                    <p class="mail-address">collinpowell@ymail.com</p>
+                </div>
+                <img src="images/mail.svg" alt="">
+                <p class="email-info">Please confirm your email address by clicking on the link you have received in your inbox.</p>
+            </div>
+
+            <button>Verify Account</button>
+            <p class="resend">Did not receive the email? <span style="color: #3E7BFA; font-weight: 500">Click to resend</span> </p>
+        </div>
+        <div class="footer">
+            <p>©2024 iVoyant Systems Pvt Ltd. All rights reserved. </p>
+        </div>
+    </div>
+</body>
+</html>
