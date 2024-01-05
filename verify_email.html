@@ -11,8 +11,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&family=Source+Sans+3:wght@400;600;700&display=swap');
 
         .main-container {
-            width: 30rem;
-            height: 46.3rem;
+            max-width: 30rem;
+            height: 42.625rem;
             margin: auto;
             margin-top: 8.38rem;
             margin-bottom: 9.38rem;
@@ -48,20 +48,25 @@
         }
 
         .main {
-            min-height: 32.9375rem;
+            max-height: 29.3rem;
             display: flex;
             flex-direction: column;
             
             align-items: center;
-            margin-top: 4.25rem;
+            padding: 1.5rem 0;
+            margin: 4.25rem 0;
+            background-color: #F7F8FA;
         }
 
         .main-info {
-            padding-top: 2rem;
+            max-width: 30rem;
+            height: 22.0625rem;
+            margin-top: 2rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 0 2.25rem;
         }
 
         .main-info>img {
@@ -71,7 +76,7 @@
             margin: 0 auto;
         }
 
-        .verify-mail {
+        .activate-account {
             font-size: 1.5rem;
             font-style: normal;
             font-weight: 600;
@@ -80,13 +85,26 @@
         }
 
         .mail {
+            color: #333;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             font-weight: 400;
+            margin-bottom: 2rem;
+            align-items: center;
+
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5rem; 
         }
 
-        .mail>p{
-            margin: 0.62rem auto;
+        .thanks-text {
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+
+        .confirm-text {
+            margin: 0rem auto;
         }
 
         .mail-address {
@@ -104,7 +122,7 @@
             line-height: normal;
         }
 
-        .main>a{
+        .mail>a{
             background-color: #2F54EB;
             width: 12.375rem;
             height: 2.5rem;
@@ -115,7 +133,7 @@
             flex-shrink: 0;
             color: white;
             border: none;
-            margin: 2rem auto;
+            margin: 1rem auto 0;
 
             text-align: center;
             font-family: 'Poppins';
@@ -126,13 +144,41 @@
             text-decoration: none;
         }
 
-        .resend {
-            font-size: 0.75rem;
+        .login-text {
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+
+        .copy-text {
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .redirect {
+            width: 25.5rem;
+            max-height: 10.5rem;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 2.25rem;
+
+            font-size: 0.875rem;
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
-            margin: 0;
-            padding-bottom: 0rem;
+            line-height: 1.5rem;
+
+        }
+
+        .redirect>a {
+            color: #3E7BFA;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5rem; 
+            text-decoration-line: underline;
+            max-width: 25.5rem;
+            word-wrap: break-word;
         }
 
         .footer p{
@@ -154,19 +200,20 @@
             <p>Fallout <span style="color:#2F54EB">Manager</span> </p>
         </div>
         <div class="main">
-            <p class="verify-mail">Verify Email</p>
+            <p class="activate-account">Activate your account</p>
             
             <div class="main-info">
                 <div class="mail">
-                    <p>We've sent an email to: </p>
-                    <p class="mail-address">collinpowell@ymail.com</p>
+                    <p class="thanks-text">Thanks for signing up for Fallout Manager</p>
+                    <p class="confirm-text">To confirm your account, click the button below</p>
+                    <a href="https://www.google.com">Verify Account</a>
                 </div>
-                <img src="images/mail.svg" alt="">
-                <p class="email-info">Please confirm your email address by clicking on the link you have received in your inbox.</p>
+                <div class="redirect">
+                    <p class="login-text">Once confirmed, you can use your new account to login to <span style="color: #3E7BFA; text-decoration: underline">FalloutManager.com</span></p>
+                    <p class="copy-text">Or copy and paste the URL into your browser:</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGqRQJjwfWtbnSqvDWNXzXGGDnL">https://mail.google.com/mail/u/0/#inbox/FMfcgzGqRQJjwfWtbnSqvDWNXzXGGDnL</a>
+                </div>
             </div>
-
-            <!-- <button>Verify Account</button> -->
-            <a href="https://www.google.com">Verify Account</a>
         </div>
         <div class="footer">
             <p>©2024 iVoyant Systems Pvt Ltd. All rights reserved.</p>
